@@ -1,0 +1,6 @@
+---
+- name: Converge
+  hosts: all
+  roles:
+  - role: test-role-2
+    when: ansible_os_family == "RedHat"
